@@ -1,0 +1,16 @@
+.line-numbers{
+  /* Set "line-numbers-counter" to 0 */
+  counter-reset: line-numbers-counter;
+}
+
+.line-numbers .remark-code-line::before {
+  /* Increment "line-numbers-counter" by 1 */
+    counter-increment: line-numbers-counter;
+    content: counter(line-numbers-counter);
+    text-align: right;
+    width: 55px;
+    border-right: 1px solid #aaa;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 5px;
+}
